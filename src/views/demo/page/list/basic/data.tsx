@@ -1,0 +1,28 @@
+/*
+ * @message: 描述
+ * @Author: Roy
+ * @Email: @163.com
+ * @Github: @163.com
+ * @Date: 2021-06-26 21:25:11
+ * @LastEditors: Roy
+ * @LastEditTime: 2021-07-14 18:23:02
+ * @Deprecated: 否
+ * @FilePath: /vue-antd-admin/src/views/demo/page/list/basic/data.tsx
+ */
+export const cardList = (() => {
+  const result: any[] = [];
+  for (let i = 0; i < 6; i++) {
+    result.push({
+      id: i,
+      title: 'Roy Admin',
+      description: '基于Vue Next, TypeScript, Ant Design Vue实现的一套完整的企业级后台管理系统',
+      datetime: '2020-11-26 17:39',
+      extra: '编辑',
+      icon: 'logos:vue',
+      color: '#1890ff',
+      author: 'Roy',
+      percent: 20 * (i + 1),
+    });
+  }
+  return result;
+})();
